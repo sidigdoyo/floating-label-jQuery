@@ -1,0 +1,113 @@
+
+.floating-label {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+.floating-label .label {
+	position: absolute;
+	bottom: 0;
+	top: 70%;
+	font-size: 0;
+	visibility: hidden;
+	font-weight: 100;
+	color: #ccc;
+}
+
+.floating-label .label,
+.floating-label input {
+	-webkit-transition: all 400ms;
+	-moz-transition: all 400ms;
+	-ms-transition: all 400ms;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input.label-active {
+	margin-top: 13px;
+}
+
+.floating-label input.label-active ~ .label {
+	bottom: 90%;
+	top: 0;
+	font-size: 12px;
+	visibility: visible;
+	font-weight: 600;
+	color: #333;
+}
+
+.floating-label input:focus {
+	border-bottom: 1px solid rgba(81, 203, 238, 1);
+}
+
+.floating-label input::-webkit-input-placeholder {
+	font-size: auto;
+	visibility: visible;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:-moz-placeholder { 
+	font-size: auto;
+	visibility: visible;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input::-moz-placeholder { 
+	font-size: auto;
+	visibility: visible;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:-ms-input-placeholder {  
+	font-size: auto;
+	visibility: visible;
+	-ms-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:-o-input-placeholder {  
+	font-size: auto;
+	visibility: visible;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
+
+
+.floating-label input.label-active::-webkit-input-placeholder {
+	font-size: 0;
+	visibility: hidden;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input.label-active:-moz-placeholder { 
+	font-size: 0;
+	visibility: hidden;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input.label-active::-moz-placeholder {
+	font-size: 0;
+	visibility: hidden;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input.label-active:-ms-input-placeholder {  
+	font-size: 0;
+	visibility: hidden;
+	-ms-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input.label-active:-o-input-placeholder {  
+	font-size: 0;
+	visibility: hidden;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
