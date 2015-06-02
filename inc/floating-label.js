@@ -10,7 +10,8 @@
 
 	$.fn.floatingLabel = function(params) {
 	    var self = this,
-	    	options = params;
+	    	options = params,
+	    	label = null;
 
 	    options.tempPlaceholder = options.placeholder;
 
@@ -31,7 +32,11 @@
 	    	self.appendTo(parent);
 	    }
 
-	    var label = $('<div>', {'class':'label', 'text':options.label}).insertAfter(self);
+	    if(!self.next().is('.label')) {
+	    	label = $('<div>', {'class':'label', 'text':options.label}).insertAfter(self);
+	    } else {
+	    	label = self.next('.label');
+	    }
 
 	    self.on('focus', function(e) {
 	    	if(!self.hasClass('label-active')) {
