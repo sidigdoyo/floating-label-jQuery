@@ -16,7 +16,7 @@
 	    options.tempPlaceholder = options.placeholder;
 
 	    if(!options.tempPlaceholder) {
-	    	options.tempPlaceholder = 'Insert ' + options.label;
+	    	options.tempPlaceholder = options.label;
 	    }
 
 	    if(!self.attr('placeholder')) {

@@ -30,6 +30,7 @@ html, body, input, textarea, div, p {
 
 .floating-label .label {
 	padding: 0 0 10px 10px;
+	font-size: 16px;
 }
 
 .floating-label input.label-active {

@@ -15,8 +15,8 @@
 .floating-label .label {
 	position: absolute;
 	bottom: 0;
-	top: 70%;
-	font-size: 0;
+	top: 25%;
+	font-size: 12px;
 	visibility: hidden;
 	font-weight: 100;
 	color: #ccc;
@@ -45,15 +45,11 @@
 }
 
 .floating-label input::-webkit-input-placeholder {
-	font-size: auto;
-	visibility: visible;
 	-webkit-transition: all 400ms;
 	transition: all 400ms;
 }
 
-.floating-label input:-moz-placeholder { 
-	font-size: auto;
-	visibility: visible;
+.floating-label input:-moz-placeholder {
 	-moz-transition: all 400ms;
 	transition: all 400ms;
 }
@@ -65,52 +61,42 @@
 	transition: all 400ms;
 }
 
-.floating-label input:-ms-input-placeholder {  
-	font-size: auto;
-	visibility: visible;
+.floating-label input:-ms-input-placeholder {
 	-ms-transition: all 400ms;
 	transition: all 400ms;
 }
 
-.floating-label input:-o-input-placeholder {  
-	font-size: auto;
-	visibility: visible;
+.floating-label input:-o-input-placeholder {
 	-o-transition: all 400ms;
 	transition: all 400ms;
 }
 
-
 .floating-label input.label-active::-webkit-input-placeholder {
-	font-size: 0;
-	visibility: hidden;
-	-webkit-transition: all 400ms;
-	transition: all 400ms;
+	color: transparent;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
 }
 
 .floating-label input.label-active:-moz-placeholder { 
-	font-size: 0;
-	visibility: hidden;
-	-moz-transition: all 400ms;
-	transition: all 400ms;
+	color: transparent;
+	-moz-transition: all 200ms;
+	transition: all 200ms;
 }
 
 .floating-label input.label-active::-moz-placeholder {
-	font-size: 0;
-	visibility: hidden;
-	-moz-transition: all 400ms;
-	transition: all 400ms;
+	color: transparent;
+	-moz-transition: all 200ms;
+	transition: all 200ms;
 }
 
 .floating-label input.label-active:-ms-input-placeholder {  
-	font-size: 0;
-	visibility: hidden;
-	-ms-transition: all 400ms;
-	transition: all 400ms;
+	color: transparent;
+	-ms-transition: all 200ms;
+	transition: all 200ms;
 }
 
 .floating-label input.label-active:-o-input-placeholder {  
-	font-size: 0;
-	visibility: hidden;
-	-o-transition: all 400ms;
-	transition: all 400ms;
+	color: transparent;
+	-o-transition: all 200ms;
+	transition: all 200ms;
 }
