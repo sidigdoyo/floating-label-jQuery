@@ -13,16 +13,8 @@
 	    	options = params,
 	    	label = null;
 
-	    options.tempPlaceholder = options.placeholder;
-
-	    if(!options.tempPlaceholder) {
-	    	options.tempPlaceholder = options.label;
-	    }
-
 	    if(!self.attr('placeholder')) {
-	    	options.placeholder = options.tempPlaceholder;
-	    } else {
-	    	options.placeholder = self.attr('placeholder');
+	    	options.placeholder = options.label;
 	    }
 
 	    self.attr('placeholder', options.placeholder);
